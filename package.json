@@ -1,0 +1,24 @@
+{
+  "name": "courseraspecialization-react",
+  "version": "1.0.0",
+  "description": "Specialization course realted project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musamaalvi/CourseraSpecialization-React.git"
+  },
+  "keywords": [
+    "react",
+    "react",
+    "javascript"
+  ],
+  "author": "M. Usama Alvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musamaalvi/CourseraSpecialization-React/issues"
+  },
+  "homepage": "https://github.com/musamaalvi/CourseraSpecialization-React#readme"
+}
