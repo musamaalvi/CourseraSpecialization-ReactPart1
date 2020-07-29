@@ -33,7 +33,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a class="loginButton">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                            <button type="button" class="btn btn-secondary btn-sm ml-auto cancelLoginButton"
                                 data-dismiss="modal">Cancel</button>
                             <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
                         </div>
@@ -164,8 +164,8 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block btn-warning btn-sm"> <a role="button"
-                            class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserteTableModal"
+                    <button type="button" class="btn btn-block btn-warning btn-sm tableButton" > <a role="button"
+                            class="btn btn-block nav-link btn-warning" 
                             href="#reserveform">Reserve Table</a>
                            </button>
                 </div>
@@ -348,6 +348,7 @@
     <script>
         $(document).ready(function(){
             $("#mycarousel").carousel( { interval: 2000 } );
+
             $("#carouselButton").click(function(){
                 if ($("#carouselButton").children("span").hasClass('fa-pause')) {
                     $("#mycarousel").carousel('pause');
@@ -360,6 +361,20 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
+            
+            $('.loginButton').click(function(){
+                $('#loginModal').modal('show')
+            });
+
+            $('.cancelLoginButton').click(function(){
+                $('#loginModal').modal('hide')
+            });
+
+            $('.tableButton').click(function(){
+                $('#reserteTableModal').modal('show')
+            })
+
+
         });
     </script>
    
