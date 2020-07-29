@@ -33,7 +33,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="loginButton">
+                    <a class="loginButton" id="loginButtonId">
                         <span class="fa fa-sign-in"></span> Login</a>
                 </span>
             </div>
@@ -164,7 +164,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn btn-block btn-warning btn-sm tableButton" > <a role="button"
+                    <button type="button" id="tableButtonID" class="btn btn-block btn-warning btn-sm " > <a role="button"
                             class="btn btn-block nav-link btn-warning" 
                             href="#reserveform">Reserve Table</a>
                            </button>
@@ -362,7 +362,7 @@
                 }
             });
             
-            $('.loginButton').click(function(){
+            $('#loginButtonId').click(function(){
                 $('#loginModal').modal('show')
             });
 
@@ -370,7 +370,7 @@
                 $('#loginModal').modal('hide')
             });
 
-            $('.tableButton').click(function(){
+            $('#tableButtonID').click(function(){
                 $('#reserteTableModal').modal('show')
             })
 
